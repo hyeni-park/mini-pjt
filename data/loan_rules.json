@@ -1,0 +1,40 @@
+{
+  "meta": {
+    "basis_date": "2026-11-11",
+    "scope": "수도권 생애최초 주택 구입자, 은행권 일반 주택담보대출",
+    "disclaimer": "공개 자료 기반 가정값으로 계산한 추정치이며, 실제 한도는 금융기관 심사에 따라 다릅니다.",
+    "note": "verified가 false인 항목은 금융위원회 보도자료 원문으로 확인 후 true로 바꾼다."
+  },
+  "ltv": {
+    "rate": 0.70,
+    "note": "생애최초 주택 구입, 수도권·규제지역 기준",
+    "source": "생애최초 주담대 조건 정리 (yugacrew.com/crewletter/first-time-buyer-mortgage-ltv), 수도권 LTV·DSR 한도 정리 (bank-mall.co.kr/plus/blog/12189)",
+    "verified": false
+  },
+  "max_loan_amount": {
+    "amount_manwon": 60000,
+    "note": "수도권·규제지역 주택구입 주담대 총액 한도. 시가 15억 원 이하 주택 기준 6억 원 (15~25억 4억, 25억 초과 2억). 2025-10-16 시행",
+    "source": "금융위원회 「주택시장 안정화 대책」 관련 긴급 가계부채 점검회의 (2025-10-15, fsc.go.kr/po010105/85432)",
+    "verified": true
+  },
+  "dsr": {
+    "limit": 0.40,
+    "note": "은행권 차주단위 DSR 한도",
+    "source": "DSR 규제 현황과 스트레스 DSR 2026 (semzip.kr/guide/dsr/gyuje/)",
+    "verified": false
+  },
+  "stress_rate": {
+    "add_rate": 0.030,
+    "note": "수도권·규제지역 주담대 스트레스 금리 하한 (1.5%에서 3.0%로 상향, 2025-10-16 시행). DSR 한도 계산에만 사용",
+    "source": "금융위원회 「주택시장 안정화 대책」 관련 긴급 가계부채 점검회의 (2025-10-15, fsc.go.kr/po010105/85432)",
+    "verified": true
+  },
+  "loan": {
+    "rate": 0.0488,
+    "term_years": 30,
+    "repayment": "equal_payment",
+    "note": "금리는 한국은행 2026년 9월 신규취급액 기준 주담대 평균. 만기·상환 방식은 계산 가정값",
+    "source": "주택담보대출 금리 4.88% 보도 (m.news.nate.com/view/20261029n29071)",
+    "verified": false
+  }
+}
